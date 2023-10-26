@@ -1,0 +1,79 @@
+.herosheet {
+  display: flex;
+  margin: 2vh auto;
+  padding: 20px;
+  gap: 3vw;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(109, 42, 42, 0.473),
+    rgba(1, 5, 22, 0.8)
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f1e9db;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 400px;
+  gap: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.name {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dobra";
+  gap: 5px;
+}
+
+.input {
+  padding-left: 5px;
+  background: none;
+  border: none;
+  color: #f1e9db;
+  font-size: larger;
+}
+
+.input:placeholder-shown {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.input:not(:placeholder-shown) {
+  background: none;
+}
+
+.input:focus {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.input[type="text"] {
+  font-family: "Dobra";
+}
+
+.divider {
+  width: 100%;
+  height: 0.1vh;
+  background-color: #f1e9db;
+}

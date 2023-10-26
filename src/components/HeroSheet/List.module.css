@@ -1,0 +1,100 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Dobra" inherit;
+}
+
+.line {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  min-height: 3rem;
+  margin-left: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #f1e9db;
+  transform: translate(-25px, 14px) rotate(45deg);
+  outline: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.name {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dobra";
+  gap: 5px;
+}
+
+.line input {
+  flex-shrink: 1;
+  min-width: 3rem;
+  min-height: 3rem;
+  text-align: center;
+  border: none;
+  background: none;
+  font-family: "Dobra";
+  font-size: larger;
+  color: #f1e9db;
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dobra";
+}
+
+.strength::before,
+.health::before {
+  background: rgb(180, 60, 90);
+}
+
+.agility::before,
+.evasion::before {
+  background: rgb(180, 160, 60);
+}
+
+.intelligence::before {
+  background: rgb(60, 160, 180);
+}
+
+.charisma::before {
+  background: rgb(120, 60, 180);
+}
+
+.stamina:before {
+  background: linear-gradient(rgb(180, 160, 60), rgb(60, 160, 180));
+}
+
+.attack::before {
+  border-color: rgb(180, 60, 90);
+}
+
+.stealth::before,
+.archery::before {
+  border-color: rgb(180, 160, 60);
+}
+
+.trainability::before,
+.survival::before,
+.medicine::before {
+  border-color: rgb(60, 160, 180);
+}
+
+.intimidation::before,
+.insight::before,
+.appearance::before,
+.manipulation::before {
+  border-color: rgb(120, 60, 180);
+}

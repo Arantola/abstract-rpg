@@ -1,0 +1,77 @@
+.regulator {
+  display: flex;
+  justify-content: center;
+}
+
+.regulator input {
+  pointer-events: none;
+}
+
+.regulator button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 1vh 1vw;
+  font-size: larger;
+  font-weight: 200;
+  transition: 0.2s;
+}
+
+.attributes,
+.down,
+.up {
+  width: 3rem;
+  height: 3rem;
+}
+
+.up::before,
+.down::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 22px solid transparent;
+  z-index: 1;
+  transform: translate(-13px, -22px);
+}
+
+.up::before {
+  border-left: 22px solid gold;
+  transition: 0.2s;
+}
+
+.down::before {
+  border-right: 22px solid gold;
+  transition: 0.2s;
+}
+
+.up:hover::before {
+  border-left: 22px solid #f1e9db;
+  transition: 0.2s;
+}
+
+.down:hover::before {
+  border-right: 22px solid #f1e9db;
+  transition: 0.2s;
+}
+
+.up:active::before {
+  border-left: 22px solid #07020d;
+  transition: 0.2s;
+}
+
+.down:active::before {
+  border-right: 22px solid #07020d;
+  transition: 0.2s;
+}
+
+.down:disabled::before {
+  border-right: 22px solid rgba(7, 2, 13, 0.4);
+  transition: 0.2s;
+}
+
+.up:disabled::before {
+  border-left: 22px solid rgba(7, 2, 13, 0.4);
+  transition: 0.2s;
+}

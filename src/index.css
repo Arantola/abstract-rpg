@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Dobra";
+  src: local("Dobra Book"), local("Dobra-Book"),
+    url("./fonts/Dobra-Book.woff2") format("woff2"),
+    url("./fonts/Dobra-Book.woff") format("woff"),
+    url("./fonts/Dobra-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Dobra" inherit;
+}

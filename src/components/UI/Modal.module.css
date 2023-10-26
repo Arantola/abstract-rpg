@@ -1,0 +1,68 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: calc(50% - 10rem);
+  width: 20rem;
+  z-index: 100;
+  overflow: hidden;
+  background: #f1e9db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  font-family: "Dobra";
+}
+
+.modal button {
+  width: 100%;
+  color: #f1e9db;
+  background-color: #07020d;
+  border: none;
+  padding: 2vh 0;
+  text-align: center;
+  font-size: larger;
+  transition: 0.2s;
+  font-family: "Dobra";
+}
+
+.modal button:hover {
+  background-color: rgba(7, 2, 13, 0.5);
+  transition: 0.2s;
+}
+
+.modal button:active {
+  background-color: #f1e9db;
+  color: #07020d;
+  transition: 0.2s;
+}
+
+.header {
+  background: linear-gradient(
+    rgba(209, 134, 58, 0.8),
+    rgba(84, 75, 64, 0.8) 80%
+  );
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: #f1e9db;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
