@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This repository contains an application developed as a test assignment for the CUE company, as well as an introduction to the React library. 
+This repository contains an application developed as a test assignment for the CUE company, as well as an introduction to the React library. [Project deploy](https://main--cerulean-malasada-6192e1.netlify.app/)
 
 In this project, I have utilized various React features and concepts including props, dynamic array rendering, conditional content rendering, React.Fragment, useState, memo, portal, and CSS Modules. 
 
